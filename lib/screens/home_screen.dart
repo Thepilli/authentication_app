@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final user =
-        context.read<FirebaseAuthMethods>().user; //using read, instead of watch, because the value of user will not change
+        context.watch<FirebaseAuthMethods>().user; //using read, instead of watch, because the value of user will not change
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

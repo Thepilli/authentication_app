@@ -1,6 +1,4 @@
-import 'package:authentication_app/screens/login_email_password_screen.dart';
 import 'package:authentication_app/screens/phone_screen.dart';
-import 'package:authentication_app/screens/signup_email_password_screen.dart';
 import 'package:authentication_app/services/firebase_auth_methods.dart';
 import 'package:authentication_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -22,16 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            CustomButton(
-                onTap: () {
-                  Navigator.pushNamed(context, EmailPasswordSignup.routeName);
-                },
-                text: 'Email/Password Sign Up'),
-            CustomButton(
-                onTap: () {
-                  Navigator.pushNamed(context, EmailPasswordLogin.routeName);
-                },
-                text: 'Email/Password Login'),
             CustomButton(
                 onTap: () {
                   Navigator.pushNamed(context, PhoneScreen.routeName);

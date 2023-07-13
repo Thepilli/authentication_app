@@ -1,8 +1,9 @@
 import 'package:authentication_app/firebase_options.dart';
-import 'package:authentication_app/screens/login_email_password_screen.dart';
 import 'package:authentication_app/screens/phone_screen.dart';
-import 'package:authentication_app/screens/signup_email_password_screen.dart';
+import 'package:authentication_app/screens/responsive_login.dart';
+import 'package:authentication_app/screens/responsive_signup.dart';
 import 'package:authentication_app/services/firebase_auth_methods.dart';
+import 'package:authentication_app/utils/pallete.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -37,15 +38,13 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Authentication',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Pallete.backgroundColor),
         home: const AuthWrapper(),
         routes: {
-          EmailPasswordSignup.routeName: (context) => const EmailPasswordSignup(),
-          EmailPasswordLogin.routeName: (context) => const EmailPasswordLogin(),
+          ResponsiveSignUpScreen.routeName: (context) => const ResponsiveSignUpScreen(),
+          ResponsiveLoginScreen.routeName: (context) => const ResponsiveLoginScreen(),
           PhoneScreen.routeName: (context) => const PhoneScreen(),
         },
       ),

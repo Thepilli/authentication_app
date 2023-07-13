@@ -1,5 +1,5 @@
 import 'package:authentication_app/screens/home_screen.dart';
-import 'package:authentication_app/screens/login_screen.dart';
+import 'package:authentication_app/screens/responsive_login.dart';
 import 'package:authentication_app/utils/show_otp_dialog.dart';
 import 'package:authentication_app/utils/show_snack_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -237,6 +237,6 @@ class AuthWrapper extends StatelessWidget {
     if (firebaseUser != null) {
       return const HomeScreen();
     }
-    return const LoginScreen();
+    return const ResponsiveLoginScreen();
   }
 }

@@ -66,6 +66,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '696259143481',
     projectId: 'my-api-endpoint',
     storageBucket: 'my-api-endpoint.appspot.com',
+    androidClientId: '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
     iosClientId: '696259143481-ma7ln2nv1v47f0uq2bt5su9mr6clquaq.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationApp',
   );
@@ -76,6 +77,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '696259143481',
     projectId: 'my-api-endpoint',
     storageBucket: 'my-api-endpoint.appspot.com',
+    androidClientId: '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
     iosClientId: '696259143481-mg6grupgka52gghrh77q1u16fq0eugll.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationApp.RunnerTests',
   );
